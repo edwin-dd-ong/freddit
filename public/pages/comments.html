@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fake Reddit</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="module" src="../js/commentsApp.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="brand">Freddit</h1>
+      <form id="loginForm">
+        <input name="userId" placeholder="User ID">
+        <button type="submit" name="login">Login</button>
+      </form> 
+    </header>
+    <main id="main">
+
+      <section id="commentPanel">
+
+        <div id="originalPost">
+          <div class="postTitle">
+          </div>
+          <div class="postData">
+          </div>
+          <div class="originalPostText">
+          </div>
+        </div>
+
+        <form id="postOrCommentForm" class="hidden">
+          <div>
+            <p id="loginName"></p>     
+            <textarea id="newComment" placeholder="Enter comment text here"></textarea>
+            <button type="submit" id="commentButton">Post</button>
+          </div>
+        </form>
+
+
+        <div id="comments">
+          <span style="margin: 0.5rem; font-size: x-large;">Comments:</span>
+          <table class="alternate-table">
+            <!-- comments go here  -->
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>

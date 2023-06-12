@@ -1,0 +1,145 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+
+.brand {
+  font-weight: bold;
+}
+
+.brand:hover {
+  cursor: pointer;
+}
+
+
+
+
+/* header and login  */
+
+
+#header {
+  background-color: #dd1515ec;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 2rem;
+}
+
+#loginForm input {
+  width: 20em;
+  height: 100%;
+}
+
+#loginForm button {
+  color: black;
+  padding: 0.25rem 1rem;
+  height: 100%;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+/* post/commentPanel global vars */
+
+#originalPost {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 0.5rem;
+  
+}
+
+.originalPostText {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+}
+
+.commentData {
+  font-size: small;
+}
+
+.postTitle {
+  font-size: x-large;
+  color: blue;
+}
+
+.postTitle:hover {
+  cursor: pointer;
+}
+
+
+/* post/comment Form */
+
+#postOrCommentForm {
+  padding: 0.5rem 0.5rem;
+}
+
+#loginName {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+#postOrCommentForm input {
+  width: 20%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#postOrCommentForm textarea {
+  width: 100%;  
+  height: 150px;
+}
+
+#postOrCommentForm button {
+  color: black;
+  padding: 0.25rem 1rem;
+  height: 100%;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+/* posts/comments area  */
+
+.alternate-table {
+  width: 100%;
+  margin-top: 1rem;
+  
+}
+
+.alternate-table td {
+  padding: 1rem 0.5rem;
+}
+
+.alternate-table tr:nth-child(odd) {
+  background-color: #f2f2f2;  
+}
+
+.alternate-table tr:nth-child(even) {
+  background-color: #ffffff;  
+}
+
+

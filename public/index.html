@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fake Reddit</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="brand">Freddit</h1>
+      <form id="loginForm">
+        <input name="userId" placeholder="User ID">
+        <button type="submit" name="login">Login</button>
+      </form> 
+    </header>
+
+    <main id="main">
+
+      <section id="postPanel">
+        <form id="postOrCommentForm" class="hidden">
+          <div>
+            <p id="loginName"></p>          
+            <input id ="newTitle" placeholder="Enter Post title here">
+            <textarea id="newPost" placeholder="Enter Post text here"></textarea>
+            <button type="submit" id="postButton">Post</button>
+          </div>
+        </form>
+
+
+        <div id="posts">
+          <span style="margin: 0.5rem; font-size: x-large;">Posts:</span>
+          <table class="alternate-table">
+        <!-- posts go here -->
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

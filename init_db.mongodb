@@ -1,0 +1,7 @@
+db = connect("Freddit");
+db.dropDatabase();
+db.posts.insertOne({ userId: "mchang", time: new Date(), title: "Welcome!", text: "Hello World!", comments:[] });
+
+
+
+
