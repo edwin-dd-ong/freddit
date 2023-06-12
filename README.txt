@@ -3,7 +3,6 @@ CS193X Final Project
 
 Project Title: Freddit
 Your Name: Edwin Ong
-Your SUNetID: edwinong
 
 Overview
 --------
